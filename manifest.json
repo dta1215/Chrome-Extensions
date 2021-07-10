@@ -1,0 +1,34 @@
+{
+    "icons": {
+        "16": "exIconNonActive.png",
+        "48": "exIcon48.png",
+        "128": "exIcon128.png"
+    },
+    "name": "HighLights Text",
+    "description": "Useful extension",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "HighLights"
+       
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "activeTab",
+        "declarativeContent",
+        "contextMenus",
+        "notifications"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["jquery.js", "content.js"],
+            "css": ["content.css"]
+        }
+    ]
+}

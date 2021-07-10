@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .btn:focus{
+    outline: none;
+    box-shadow: 0px 0px 0px 0px #3333;
+    }
+    .btnEnable{
+        color: #0000009c;
+        background-image: linear-gradient(355deg, #69696936, #ffffff00);
+        box-shadow: 0px 0px 2px 1px #33333336;
+    }
+    .btnEnable:focus, .btnEnable:hover{
+        color: #0000009c;
+        background-image: linear-gradient(355deg, #69696936, #ffffff00);
+        box-shadow: 0px 0px 2px 1px #33333336;
+    }
+</style>
+<body>
+    <!-- "default_popup": "popup2.html" -->
+    <div class="container">
+        <button id="btnEnable" class="btn" state="disable">Enable</button>
+    </div>
+    
+    <script src="jquery.js"></script>  
+    <script src="popup.js"></script>  
+    <script src="content.js"></script>
+    <script src="background.js"></script>
+    
+</body>
+</html>
